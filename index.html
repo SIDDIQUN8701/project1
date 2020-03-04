@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog 2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="root">
+            <header>
+                <h1>Blog 2: CSS and the Holy Grail</h1>
+                <p>The search for an indisputable layout. </p>
+            </header>
+            <div id="chester">
+              <div id="left-arm">
+                  <p>This is the left-arm of the website. The heart is flanked by two right and left columns. I was planning on using the columns as permanent objects on each page. They would be used to help the navigation across the site. For example, I could post links to the other pages of my website by using an list without the bullet points removed (list-style: none). Because they would be on every page, it would be easier to click on any one of the links and navigate directly to the page you want to visit. This column is made by using a flexbox and centering the content inside of it. It is given a width of 200 pixels and is not allowed to shrink by setting its "flex-shrink" to 0. Both columns and the heart are actually three different children in a flexbox set in the chester tag. The chester area is the middle area of the page that does not include the header or footer. It sets its children to align in a row and stretch to fit the page as well as fill the gaps inbetween each other.   </p>
+              </div>
+              <div id="heart">
+                <p>Blog 2 is going to focus on the Holy Grail layout talked about in lecture 5. This concept interests me because it was the layout I imagined for my website for assignment 1. I may even knock out two birds with one stone and use this as a template for the starting of the assignment. It essentially works like this: There is a header, where I put the title in big, bolded words and added some colorful styling to it. You can also add a small little excerpt, or maybe a subtitle to add some calrity to your website. The area this text is in right now is called the heart. This is your main box, where you can put the meat and potatoes of your information, such as pictures, text, links, etc. This heart is made by filling in the space the left and right columns don't take up. Both the right and left columns take up 200px of space on the sides, and the heart is essentially the space inbetween, giving the right and left columns a sidebar visual aesthetic. I still need to figure out how to get rid of the white space and get the background colors to line up. I could set the height attricute of the heart to 100% to bring the background color end right to the end of the text, however that would look worse in my opinion than what I have right now and will tackle that problem later. This layout was the most common for most blogs in the start of the internet and still is for most beginner web developers (such as myself).  </p>
+              </div>
+              <div id="right-arm">
+                <p>This is obviously the right column. Instead of having permanent links like the left column, I intend to put some testemonials from previous customers about their experiences and feelings about the store. This column is made the same way as the right column. </p>
+              </div>
+            </div>
+            <footer>
+                <p>Lastly, we have the footer of the page. This is always going to be on the bottom, obviously, and I am planning on putting all the normal business information you would usually find down here; "About Us" information, phone number, address, hours of operation, etc. </p>
+                <br>
+                Editor's note: I still need to learn a lot about this layout and understand that my knowledge about the layout is quite elemntary. I have some ideas about how to make this look a little cleaner, but do not quite know how to implement them, and will ask the TA how to start working mon my ideas. (Like how to get rid of this giant white space above, I am guessing it has to do something with flex-grow)
+            </footer>
+          </div>
+    </body>
+</html>
