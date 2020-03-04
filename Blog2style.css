@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  header {
+      background-color: blueviolet;
+      border: 10px solid blue;
+  }
+
+  #chester {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  #heart {
+    flex-grow: 1;
+    background-color: gray;
+  }
+
+  #left-arm, #right-arm {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    background-color: lightgray;
+    flex-basis: 200px;
+  }
+
+  footer {
+      text-align: center;
+      position: absolute;
+      background-color: black;
+      color: white;
+      bottom: 0;
+  }
