@@ -6,15 +6,31 @@ html, body {
     margin: 0;
   }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+
   #root {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    
   }
 
   header {
-      background-color: blueviolet;
-      border: 10px solid blue;
+    background-color: #351C15;
+    color: #FFB500;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 18pt;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
   }
 
   #chester {
@@ -23,25 +39,27 @@ html, body {
     flex-direction: row;
     align-items: stretch;
     font-size: 16pt;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   #heart {
     flex-grow: 1;
-    background-color: gray;
+    padding: 10px;
+    border: 1px solid black;
   }
 
   #left-arm, #right-arm {
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    background-color: lightgray;
     flex-basis: 200px;
+    padding: 10px;
   }
 
   footer {
       text-align: center;
-      position: absolute;
+      position: relative;
       background-color: black;
       color: white;
       bottom: 0;
@@ -52,29 +70,34 @@ html, body {
   .navigation{
     display: flex;
     flex-flow: row wrap;
+    flex-grow: 1;
     /* This aligns items to the end line on main-axis */
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    align-content: space-between;
     list-style: none;
     margin: 0;
-    background-color: skyblue;
-    border: 1px solid black
+    background-color: #FFB500;
+    border: 1px solid black;
+    position: fixed;
+    left: 0px;
+    right: 0px;
   }
   
-  /* Medium screens */
+  /* Medium screens
   @media all and (max-width: 800px) {
     .navigation {
       /* When on medium sized screens, we center it by evenly distributing empty space around items */
-      justify-content: space-around;
+      /* justify-content: space-around;
     }
-  }
+  } */
   
   /* Small screens */
-  @media all and (max-width: 500px) {
-    .navigation {
+  /* @media all and (max-width: 500px) {
+    .navigation { */
       /* On small screens, we are no longer using row direction but column */
-      flex-direction: column;
+      /* flex-direction: column;
     }
-  }
+  } */ 
   
   .navigation a {
     text-decoration: none;
@@ -85,20 +108,4 @@ html, body {
   
   .navigation a:hover {
     background: #1565C0;
-  }
-  
-  .box-parent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .box{
-    display: table;
-    background-color: lightgrey;
-    border: 1px solid black;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 5%;
   }
