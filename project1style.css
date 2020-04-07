@@ -6,14 +6,14 @@ body {
   margin: 0;
 }
 
-.center {
+/* .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
   height: 70%;
   object-fit: contain;
-}
+} */
 
 
 #root {
@@ -44,11 +44,11 @@ header {
 #heart {
   flex-grow: 1;
   padding: 10px;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 #left-arm, #right-arm {
-  border: 2px solid black;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -59,8 +59,8 @@ header {
 footer {
   text-align: center;
   position: relative;
-  background-color: black;
-  color: white;
+  background-color: #351C15;
+  color: #FFB500;
   bottom: 0;
   font-size: 20pt;
   font-family: Arial, Helvetica, sans-serif;
@@ -106,5 +106,5 @@ right: 0px;
 }
   
 .navigation a:hover {
-  background: #1565C0;
+  background: #351C15;
 }
