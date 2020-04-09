@@ -127,3 +127,7 @@ right: 0px;
   clear: both;
   display: table;
 }
+
+ol {
+  font-size: 16pt;
+}
