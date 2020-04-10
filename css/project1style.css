@@ -35,10 +35,9 @@ header {
   flex-grow: 1;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px solid #FFB500;
 }
 
-#left-arm, #right-arm {
+#left-arm{
   border: 1px solid #FFB500;
   display: flex;
   flex-direction: column;
@@ -75,21 +74,42 @@ left: 0px;
 right: 0px;
 }
   
-/* Medium screens
-@media all and (max-width: 800px) {
+/* Medium screens */
+@media (max-width: 1000px) {
   .navigation {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    /* justify-content: space-around;
+    justify-content: space-around;
   }
-} */
+  .navigation { 
+    flex-direction: column;
+    position: relative;
+  }
+  #chester{
+    flex-direction: column;
+  }
+  .column img{
+    height: 100px;
+    width: 50%;
+  }
+} 
 
 /* Small screens */
-/* @media all and (max-width: 500px) {
-  .navigation { */
-    /* On small screens, we are no longer using row direction but column */
-    /* flex-direction: column;
+ @media (max-width: 500px) {
+  .navigation { 
+    flex-direction: column;
+    position: relative;
   }
-} */ 
+  #chester{
+    flex-direction: column;
+  }
+  .column img{
+    display: inline;
+    /* float: right;
+    width: 50%;
+    height: 100px; */
+    object-fit: contain;
+    padding: 5px;
+  }
+} 
   
 .navigation a {
   text-decoration: none;
@@ -125,6 +145,46 @@ ol {
   font-size: 16pt;
 }
 
-.container{
-align-items: top;
+ol > li{
+  margin: 20px;
+}
+
+hr {
+  border: 0.5px solid #FFB500;
+}
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  border: 1px solid #FFB500;
+  padding: 10px;
+}
+
+form > ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+textarea {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 175px;
+  box-sizing: border-box;
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+  resize: none;
+  /* Provide space to type some text */
+  height: 100px;
+}
+
+input:focus, 
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
 }
