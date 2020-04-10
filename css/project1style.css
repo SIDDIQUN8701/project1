@@ -36,6 +36,7 @@ header {
   padding-left: 10px;
   padding-right: 10px;
   border: 1px solid #FFB500;
+  position: relative;
 }
 
 #left-arm, #right-arm {
@@ -123,4 +124,8 @@ right: 0px;
 
 ol {
   font-size: 16pt;
+}
+
+.container{
+align-items: top;
 }
