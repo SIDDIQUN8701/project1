@@ -138,15 +138,15 @@ textarea {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 175px;
   box-sizing: border-box;
-  /* Align multiline text fields with their labels */
   vertical-align: top;
   resize: none;
-  /* Provide space to type some text */
   height: 100px;
   transition: width 0.4s ease-in-out;
+  margin-top: 10px;
 }
 
 input{
+  margin-top: 10px;
   transition: width 0.4s ease-in-out;
   width: 175px;
 }
@@ -192,3 +192,13 @@ input:focus, textarea:focus {
     padding: 5px;
   }
 } 
+
+.button {
+  padding-left: 90px; 
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 5px;
+}
