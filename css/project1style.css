@@ -33,8 +33,7 @@ header {
 
 #heart {
   flex-grow: 1;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
 }
 
 #left-arm{
@@ -73,44 +72,7 @@ position: fixed;
 left: 0px;
 right: 0px;
 }
-  
-/* Medium screens */
-@media (max-width: 1000px) {
-  .navigation {
-    justify-content: space-around;
-  }
-  .navigation { 
-    flex-direction: column;
-    position: relative;
-  }
-  #chester{
-    flex-direction: column;
-  }
-  .column img{
-    height: 100px;
-    width: 50%;
-  }
-} 
-
-/* Small screens */
- @media (max-width: 500px) {
-  .navigation { 
-    flex-direction: column;
-    position: relative;
-  }
-  #chester{
-    flex-direction: column;
-  }
-  .column img{
-    display: inline;
-    /* float: right;
-    width: 50%;
-    height: 100px; */
-    object-fit: contain;
-    padding: 5px;
-  }
-} 
-  
+    
 .navigation a {
   text-decoration: none;
   display: block;
@@ -181,10 +143,52 @@ textarea {
   resize: none;
   /* Provide space to type some text */
   height: 100px;
+  transition: width 0.4s ease-in-out;
 }
 
-input:focus, 
-textarea:focus {
+input{
+  transition: width 0.4s ease-in-out;
+  width: 175px;
+}
+
+input:focus, textarea:focus {
   /* Additional highlight for focused elements */
   border-color: #000;
+  width: 70%;
 }
+
+/* Medium screens */
+@media (max-width: 1000px) {
+  .navigation {
+    justify-content: space-around;
+  }
+  .navigation { 
+    flex-direction: column;
+    position: relative;
+  }
+  #chester{
+    flex-direction: column;
+  }
+  .column img{
+    height: 100px;
+    width: 50%;
+  }
+} 
+
+/* Small screens */
+ @media (max-width: 500px) {
+  .navigation { 
+    flex-direction: column;
+    position: relative;
+  }
+  #chester{
+    flex-direction: column;
+  }
+  img{
+    float: right;
+    width: 50%;
+    height: 100px;
+    object-fit: cover;
+    padding: 5px;
+  }
+} 
