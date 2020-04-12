@@ -185,6 +185,10 @@ input:focus, textarea:focus {
   #chester{
     flex-direction: column;
   }
+  #left-arm > ol{
+    display: flex;
+    flex-direction: column;
+  }
   /* img{
     object-fit: contain;
     padding: 5px;
