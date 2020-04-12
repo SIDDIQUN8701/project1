@@ -158,7 +158,7 @@ input:focus, textarea:focus {
 }
 
 /* Medium screens */
-@media all and (min-width: 768px) {
+/* @media all and (min-width: 768px) {
   .navigation {
     justify-content: space-around;
   }
@@ -173,7 +173,7 @@ input:focus, textarea:focus {
     height: 100px;
     width: 50%;
   }
-} 
+}  */
 
 /* Small screens */
  @media all and (max-width: 600px) {
