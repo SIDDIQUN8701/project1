@@ -158,7 +158,7 @@ input:focus, textarea:focus {
 }
 
 /* Medium screens */
-@media all and (min-width: 601px) {
+@media all and (min-width: 768px) {
   .navigation {
     justify-content: space-around;
   }
@@ -187,9 +187,6 @@ input:focus, textarea:focus {
   img{
     object-fit: contain;
     padding: 5px;
-  }
-  #heart{
-    flex-direction: column;
   }
 } 
 
