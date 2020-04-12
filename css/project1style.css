@@ -92,7 +92,7 @@ right: 0px;
 
 .column img {
   float: left;
-  width: 25%;
+  width: auto;
   height: 400px;
   object-fit: fill;
   padding: 5px;
@@ -194,10 +194,11 @@ input:focus, textarea:focus {
   #left-arm {
     flex-grow: 10;
   }
-  /* img{
+
+  img {
     object-fit: contain;
     padding: 5px;
-  } */
+  }
 } 
 
 .button {
