@@ -185,7 +185,7 @@ input:focus, textarea:focus {
   #chester{
     flex-direction: column;
   }
-  #left-arm > ol{
+  #left-arm, ol{
     display: flex;
     flex-direction: column;
   }
