@@ -176,12 +176,12 @@ input:focus, textarea:focus {
 }  */
 
 /* Small screens */
- @media all and (max-width: 1000px) {
+ @media all and (max-width: 700px) {
   .navigation { 
     flex-direction: column;
     position: relative;
   }
-  #root{
+  #chester{
     flex-direction: column;
   }
   /* img{
