@@ -191,7 +191,7 @@ input:focus, textarea:focus {
   }
 
   #left-arm {
-    flex-grow: 3;
+    flex-grow: 10;
   }
   /* img{
     object-fit: contain;
