@@ -176,7 +176,7 @@ input:focus, textarea:focus {
 } 
 
 /* Small screens */
- @media all and (max-width: 500px) {
+ @media all and (max-width: 100px) {
   .navigation { 
     flex-direction: column;
     position: relative;
