@@ -181,11 +181,8 @@ input:focus, textarea:focus {
     flex-direction: column;
     position: relative;
   }
-  #chester{
+  #root{
     flex-direction: column;
-  }
-  #left-arm{
-    flex-direction: row;
   }
   /* img{
     object-fit: contain;
