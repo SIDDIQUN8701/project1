@@ -176,7 +176,7 @@ input:focus, textarea:focus {
 }  */
 
 /* Small screens */
- @media only screen and (max-width: 400px) {
+ @media all and (max-width: 700px) {
   .navigation { 
     flex-direction: column;
     position: relative;
@@ -184,10 +184,10 @@ input:focus, textarea:focus {
   #chester{
     flex-direction: column;
   }
-  img{
+  /* img{
     object-fit: contain;
     padding: 5px;
-  }
+  } */
 } 
 
 .button {
