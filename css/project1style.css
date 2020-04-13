@@ -60,19 +60,18 @@ footer {
 }
 
 .navigation{
-display: flex;
-flex-flow: row wrap;
-flex-grow: 1;
-/* This aligns items to the end line on main-axis */
-justify-content: space-evenly;
-align-content: space-between;
-list-style: none;
-margin: 0;
-background-color: #FFB500;
-border: 1px solid black;
-position: fixed;
-left: 0px;
-right: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  align-content: space-between;
+  list-style: none;
+  margin: 0;
+  background-color: #FFB500;
+  border: 1px solid black;
+  position: fixed;
+  left: 0px;
+  right: 0px;
 }
     
 .navigation a {
@@ -95,10 +94,9 @@ right: 0px;
   width: 25%;
   height: 400px;
   object-fit: fill;
-  padding: 2px;
+  padding: 5px;
 }
 
-/* Clearfix (clear floats) */
 .row::after {
   content: "";
   clear: both;
@@ -147,14 +145,13 @@ textarea {
   margin-top: 10px;
 }
 
-input{
+input {
   margin-top: 10px;
   transition: width 0.4s ease-in-out;
   width: 175px;
 }
 
 input:focus, textarea:focus {
-  /* Additional highlight for focused elements */
   border-color: #000;
   width: 70%;
 }
@@ -165,10 +162,12 @@ input:focus, textarea:focus {
   .navigation { 
     flex-direction: column;
     position: relative;
-    }
+  }
+
   #chester{
     flex-direction: column;
   }
+
   #left-arm > ol{
     display: flex;
     flex-direction: column;
@@ -182,7 +181,7 @@ input:focus, textarea:focus {
   }
 } 
 
-
+/* Medium screens */
 @media all and (min-width: 900px) and (max-width: 1600px){
   .column img {
     height: auto;
@@ -197,7 +196,5 @@ input:focus, textarea:focus {
 }
 
 button {
-  /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
   margin-left: 5px;
 }
