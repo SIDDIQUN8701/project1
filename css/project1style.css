@@ -92,10 +92,10 @@ right: 0px;
 
 .column img {
   float: left;
-  width: auto;
+  width: 25%;
   height: 400px;
   object-fit: fill;
-  padding: 5px;
+  padding: 2px;
 }
 
 /* Clearfix (clear floats) */
@@ -159,30 +159,13 @@ input:focus, textarea:focus {
   width: 70%;
 }
 
-/* Medium screens */
-/* @media all and (min-width: 768px) {
-  .navigation {
-    justify-content: space-around;
-  }
-  .navigation { 
-    flex-direction: column;
-    position: relative;
-  }
-  #chester{
-    flex-direction: column;
-  }
-  .column img{
-    height: 100px;
-    width: 50%;
-  }
-}  */
 
 /* Small screens */
- @media all and (max-width: 1000px) {
+ @media all and (max-width: 800px) {
   .navigation { 
     flex-direction: column;
     position: relative;
-  }
+    }
   #chester{
     flex-direction: column;
   }
@@ -191,15 +174,23 @@ input:focus, textarea:focus {
     flex-direction: column;
   }
 
-  #left-arm {
-    flex-grow: 10;
-  }
-
-  img {
-    object-fit: contain;
+  .column img {
+    height: auto;
+    width: 100%;
     padding: 5px;
+    object-fit: cover;
   }
 } 
+
+
+@media all and (min-width: 800px) and (max-width: 1700px){
+  .column img {
+    height: auto;
+    width: 50%;
+    padding: 5px;
+    object-fit: cover;
+  }
+}
 
 .button {
   padding-left: 90px; 
