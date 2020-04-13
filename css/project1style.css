@@ -198,3 +198,7 @@ input:focus, textarea:focus {
 button {
   margin-left: 5px;
 }
+
+.inner {
+  list-style: none;
+}
